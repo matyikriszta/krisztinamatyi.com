@@ -4,16 +4,12 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import './index.css'
 
 import icon32 from './favicon.png'
 
-const Wrapper = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
-`
+const Main = styled.main``
 
 const Layout = ({ children, data }) => (
   <div>
@@ -26,7 +22,8 @@ const Layout = ({ children, data }) => (
       link={[{ rel: 'shortcut icon', type: 'image/png', href: `${icon32}` }]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <Wrapper>{children()}</Wrapper>
+    <Main>{children()}</Main>
+    <Footer />
   </div>
 )
 

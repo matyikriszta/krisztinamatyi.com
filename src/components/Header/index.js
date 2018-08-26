@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 import styled from 'styled-components'
 import logo from './logo.svg'
 
-const Container = styled.div`
+const Container = styled.header`
   margin-bottom: 1.45rem;
   border-top: 10px solid #1abc9c;
 `
@@ -20,11 +22,9 @@ const Wrapper = styled.div`
 
 const Image = styled.img`
   width: 100px;
-  margin-bottom: 0;
 `
-const StyledLink = styled(Link)`
+const Logo = styled(Link)`
   display: block;
-  border-bottom: 0;
 `
 
 const List = styled.ul`
@@ -34,26 +34,32 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   display: inline;
-  margin-left: 1rem;
+  margin-left: 0.8rem;
   margin-bottom: 0;
+`
+
+const StyledLink = styled(AnchorLink)`
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `
 
 const Header = ({ siteTitle }) => (
   <Container>
     <Wrapper>
-      <StyledLink to="/" title="Krisztina Matyi">
+      <Logo to="/" title={siteTitle}>
         <Image src={logo} alt="Logo" />
-      </StyledLink>
+      </Logo>
       <nav>
         <List>
           <ListItem>
-            <Link to="">About</Link>
+            <StyledLink href="#about">About</StyledLink>
           </ListItem>
           <ListItem>
-            <Link to="">Recent Work</Link>
+            <StyledLink href="#recent-work">Recent work</StyledLink>
           </ListItem>
           <ListItem>
-            <Link to="">Contact</Link>
+            <StyledLink href="#connect">Connect</StyledLink>
           </ListItem>
         </List>
       </nav>
