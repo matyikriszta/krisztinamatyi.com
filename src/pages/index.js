@@ -44,27 +44,27 @@ const IndexPage = () => (
     <Section id="about">
       <p>
         Hi, I'm Kriszta. I am an experienced web developer with a background in
-        product and graphic design. I love solving problems and am passionate
-        about usability, accessibility, and creating digital products that
-        end-users find both useful and delightful. I love working with smart
-        people who challenge me to learn and do my best work.
+        product and graphic design. I love solving problems and building digital
+        products that are usable, accessible, and that end-users find both
+        useful and delightful. I love working with smart people who challenge me
+        to learn and do my best work.
       </p>
       <p>
         I'm currently a Senior Developer at Happy Bear Software. As part of a
         team of consulting developers I am responsible for new feature
-        development and ongoing codebase maintenance for a variety of clients,
-        primarily working with Ruby on Rails, PostgreSQL, and Heroku. I also
-        have experience building web apps in Javascript, node.js, and MongoDB,
-        as well as performant websites in HTML, CSS, and Javascript, backed by a
-        variety of content management systems.
+        development and ongoing codebase maintenance for a variety of clients. I
+        primarily work with Ruby on Rails, PostgreSQL, and Heroku. I also have
+        experience building performant web apps with Javascript, Node.js,
+        Express, and MongoDB.
       </p>
       <p>
         I'm a vocal advocate for diversity and inclusion in the tech industry.
         I'm a Director of codebar, a non-profit initiative that facilitates the
         growth of a diverse tech community by running regular programming
         workshops in 17 cities around the world. I also volunteer my time to
-        organisations like <a href="">Canada Learning Code</a> and{' '}
-        <a href="">Rails Girls London</a>.
+        organisations like{' '}
+        <a href="https://www.canadalearningcode.ca/">Canada Learning Code</a>{' '}
+        and <a href="http://railsgirls.london/">Rails Girls London</a>.
       </p>
       <p>
         In my spare time you will find me going to exhibitions, snowboarding,
@@ -80,22 +80,22 @@ const IndexPage = () => (
         - In my role as Director I’m responsible for the general management of
         the organisation including fundraising, overseeing our worldwide network
         of chapters, managing our online communities and maintaining the codebar
-        technical infrastructure including a Ruby on Rails app.
+        technical infrastructure.
       </p>
       <p>
-        <strong>The online bookseller</strong> - Most recently I worked with an
-        online bookseller where I lead extensive refactoring efforts of their
-        Rails app. I improved their Amazon integrations which allowed users to
-        gain better insights into the status of their purchases. I also
-        implemented several changes to their shipping label generating process
-        to aid the work of their on-site shipping staff.
+        <strong>The online bookseller</strong> - At Happy Bear Software I worked
+        with a client who was an online bookseller. There I lead extensive
+        refactoring efforts of their Rails app. I improved their Amazon
+        integrations which allowed users to gain better insights into the status
+        of their purchases. I also worked on their shipping label generating
+        process to improve the productivity of their on-site shipping staff.
       </p>
       <p>
-        <strong>The internal tool</strong> - While at Wolff Olins I extensively
-        worked on an internal tool used to conduct yearly employee reviews.
-        Built in node.js + Express, backed by MongoDB and using Pug templating,
-        I worked on every aspect of the project including the API, the database
-        integration, and the front-end.
+        <strong>The internal tool</strong> - At Wolff Olins I worked on an
+        internal tool used to conduct yearly employee reviews. Built in Node.js
+        and Express, backed by MongoDB and using Pug templating, I worked on
+        every aspect of the project including the API, the database integration,
+        and the front-end.
       </p>
 
       <FlexContainer>
@@ -105,7 +105,12 @@ const IndexPage = () => (
           title="Telia Ethics"
           link="http://dontdothisatwork.teliacompany.com/"
         >
-          Write description here, make it same length as other
+          A static website for Telia Company's groundbreaking Code of Conduct,
+          featuring animated short videos illustrating the main concepts of the
+          CoC. Built using Middleman, SCSS and plain Javascript, the process of
+          building the site required close collaboration with the designers to
+          bring their vision to life. The project went on to win a Wood Pencil
+          at the D&amp;AD Awards 2017.
         </ProjectCard>
         <ProjectCard
           image={wo}
@@ -113,7 +118,7 @@ const IndexPage = () => (
           title="Wolff Olins website"
           link="https://www.wolffolins.com/"
         >
-          Write description
+          A complete rewrite of the Wolff Olins website.
         </ProjectCard>
       </FlexContainer>
 
