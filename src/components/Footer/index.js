@@ -11,7 +11,7 @@ const Footer = () => (
   <footer>
     <Wrapper>
       <p>
-        <small>Copyright © Krisztina Matyi 2018</small>
+        <small>Copyright © Krisztina Matyi 2020</small>
       </p>
     </Wrapper>
   </footer>
