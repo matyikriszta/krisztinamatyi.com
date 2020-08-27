@@ -3,19 +3,12 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import ProjectCard from '../components/ProjectCard'
 import telia from './telia-ethics.png'
-import wo from './wolff-olins.png'
 
 const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
-`
-
-const FlexContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 `
 
 const Header = styled.header``
@@ -50,12 +43,14 @@ const IndexPage = () => (
         to learn and do my best work.
       </p>
       <p>
-        I'm currently a Senior Developer at Happy Bear Software. As part of a
-        team of consulting developers I am responsible for new feature
-        development and ongoing codebase maintenance for a variety of clients. I
-        primarily work with Ruby on Rails, PostgreSQL, and Heroku. I also have
-        experience building performant web apps with Javascript, Node.js,
-        Express, and MongoDB.
+        I'm currently a Full-Stack Developer at{' '}
+        <a href="https://lexoo.com/">Lexoo</a>. I am responsible for both
+        front-end and back-end systems, though most of my time is focused on
+        front-end architecture. Most recently, I was the technical lead for our
+        app’s new design system and component library. I primarily work with
+        Ruby on Rails, Vue.js, PostgreSQL, and Heroku. I also have experience
+        building performant web apps with Javascript, Node.js, Express, and
+        MongoDB.
       </p>
       <p>
         I'm a vocal advocate for diversity and inclusion in the tech industry.
@@ -75,6 +70,11 @@ const IndexPage = () => (
       <h2>Recent work</h2>
       <p>
         <strong>
+          Full-Stack Developer, <a href="https://lexoo.com/">Lexoo</a>
+        </strong>{' '}
+      </p>
+      <p>
+        <strong>
           Director, <a href="https://codebar.io/">codebar</a>
         </strong>{' '}
         - In my role as Director I’m responsible for the general management of
@@ -83,50 +83,44 @@ const IndexPage = () => (
         technical infrastructure.
       </p>
       <p>
-        <strong>The online bookseller</strong> - At Happy Bear Software I worked
-        with a client who was an online bookseller. There I lead extensive
-        refactoring efforts of their Rails app. I improved their Amazon
-        integrations which allowed users to gain better insights into the status
-        of their purchases. I also worked on their shipping label generating
-        process to improve the productivity of their on-site shipping staff.
+        <strong>The online bookseller</strong> - While working as a senior
+        developer at software consultancy Happy Bear Software I contracted with
+        an online bookseller specialising in rare books sold through Amazon.
+        There I lead extensive refactoring efforts of their Ruby on Rails
+        application. I improved their Amazon Marketplace Web Service (Amazon
+        MWS) integration, allowing their customers to gain better insights into
+        the status of their purchases, including providing more detailed
+        shipping information. I also worked on their shipping label generating
+        service to improve the productivity of their on-site shipping staff.
       </p>
       <p>
-        <strong>The internal tool</strong> - At Wolff Olins I worked on an
-        internal tool used to conduct yearly employee reviews. Built in Node.js
-        and Express, backed by MongoDB and using Pug templating, I worked on
-        every aspect of the project including the API, the database integration,
-        and the front-end.
+        <strong>The internal tool</strong> - While a front-end developer at
+        Wolff Olins, I worked on an internal tool used to conduct yearly
+        performance reviews. Built in Node.js and Express, backed by MongoDB and
+        using Pug templating, I worked on every aspect of the project including
+        the API, the database integration, and the front-end.
       </p>
 
-      <FlexContainer>
-        <ProjectCard
-          image={telia}
-          alt="Telia Ethics Website"
-          title="Telia Ethics"
-          link="http://dontdothisatwork.teliacompany.com/"
-        >
-          A static website for Telia Company's groundbreaking Code of Conduct,
-          featuring animated short videos illustrating the main concepts of the
-          CoC. Built using Middleman, SCSS and plain Javascript, the process of
-          building the site required close collaboration with the designers to
-          bring their vision to life. The project went on to win a Wood Pencil
-          at the D&amp;AD Awards 2017.
-        </ProjectCard>
-        <ProjectCard
-          image={wo}
-          alt="Wolff Olins website"
-          title="Wolff Olins website"
-          link="https://www.wolffolins.com/"
-        >
-          A complete rewrite of the Wolff Olins website.
-        </ProjectCard>
-      </FlexContainer>
+      <ProjectCard
+        image={telia}
+        alt="Telia Ethics Website"
+        title="Telia Ethics"
+        link="http://dontdothisatwork.teliacompany.com/"
+      >
+        A static website for Telia Company's groundbreaking Code of Conduct,
+        showcasing animated short videos illustrating the main concepts of the
+        CoC. Built using Middleman, SCSS and vanilla Javascript, the process of
+        building the site required close collaboration with the designers to
+        bring their vision to life. The project went on to win a Wood Pencil at
+        the D&amp;AD Awards 2017.
+      </ProjectCard>
 
       <h3>Skills</h3>
       <p>
-        <strong>Technology:</strong> Javascript, Ruby, HTML, CSS, Node.js,
-        Express, Ruby on Rails, PostgreSQL, MongoDB, Git, Heroku, AWS, TDD, CI
-        systems including Travis and Codeship, Gulp, Webpack
+        <strong>Technology:</strong> HTML, CSS, Javascript (including ES2015),
+        Ruby, Ruby on Rails, Vue.js, Node.js, Express, PostgreSQL, MongoDB, Git,
+        Heroku, TDD, Webpack, CI systems including Travis and CircleCI.
+        Familiarity with the AWS ecosystem.
       </p>
       <p>
         <strong>Design:</strong> Wireframing, rapid prototyping, Adobe Suite,
