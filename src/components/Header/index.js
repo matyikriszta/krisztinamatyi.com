@@ -38,7 +38,13 @@ const ListItem = styled.li`
   margin-bottom: 0;
 `
 
-const StyledLink = styled(AnchorLink)`
+const StyledAnchorLink = styled(AnchorLink)`
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+`
+
+const StyledLink = styled.a`
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -53,13 +59,18 @@ const Header = ({ siteTitle }) => (
       <nav>
         <List>
           <ListItem>
-            <StyledLink href="#about">About</StyledLink>
+            <StyledAnchorLink href="#about">About</StyledAnchorLink>
           </ListItem>
           <ListItem>
-            <StyledLink href="#recent-work">Recent work</StyledLink>
+            <StyledAnchorLink href="#recent-work">Recent work</StyledAnchorLink>
           </ListItem>
           <ListItem>
-            <StyledLink href="#connect">Connect</StyledLink>
+            <StyledLink href="https://medium.com/@krisztamatyi">
+              Writing
+            </StyledLink>
+          </ListItem>
+          <ListItem>
+            <StyledAnchorLink href="#connect">Connect</StyledAnchorLink>
           </ListItem>
         </List>
       </nav>
